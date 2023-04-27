@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* <HEADER IMAGE> */
+.header-image{
+    width: 100%;
+    height: 220px;
+    border-bottom: 2px solid black;
+    border-radius: 0 !important;
+}
+
+/* <PAGINATION> */
+ul>li{
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(106, 50, 209, 0.719);
+    color: rgb(7, 7, 7);
+    
+}
+ul{
+    list-style-type: none;
+   
+}
+
+.pagination-div{
+    
+    border-top: 1px solid rgb(161, 156, 156);
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(to left,rgb(184, 253, 195),rgb(158, 240, 240) ,rgb(245, 184, 227)) !important;
+     display: grid;
+     align-items: center;
+     padding-bottom: 0px !important;
+}
+
+.pagination-link:hover ,.active{
+    color: white;
+    background-color: rgba(34, 49, 182, 0.432);
+    cursor: pointer;
+}
+
+
+.first:hover,.last:hover{
+    color: white;
+    background-color: rgb(128, 20, 20);
+    cursor: grabbing;
+}
+.previous:hover,.next:hover{
+    color: white;
+    background-color: rgb(128, 20, 20);
+    cursor: pointer;
+}
+
+.body{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(238, 240, 241) ;
+    padding-bottom: 80px;
+}
+
+.card{
+    width: 200px !important;
+    height: max-content;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px !important;
+    box-shadow:  5px 5px 15px black;
+    background-image: linear-gradient(to left,rgb(184, 253, 201),rgba(141, 235, 191, 0.644) ,rgb(162, 240, 201)) !important;
+}
+.card:hover{
+    box-shadow:  10px 10px 40px black;
+    cursor: context-menu;
+}
+
+img{
+    height: 140px ;
+    width: max-content;
+    border-radius: 18px 18px 7px 7px !important;
+    background-color: white;
+}
+/* <CARD-BODY STYLES> */
+.card-body{
+    padding: 0 !important;
+}
+
+/* <CARD-BODY-PRODUCT NAME-STYLES> */
+
+.ProductName-div{
+    margin-top: 8px;
+    height: 50px;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 15px !important;
+    padding: 5px;
+    overflow-y: hidden;
+    
+}
+
+/* <CARD-BODY-BRAND NAME-STYLES> */
+
+.Brand-div{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 13px !important;
+    margin: 0px;
+      height: 30px;
+}
+
+/* <CARD-BODY-DESCRIPTION STYLES> */
+
+.description{
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+ .card-text{
+    overflow-y: scroll;
+    height: 80px;
+    font-size: 10px;
+    padding: 0 !important;
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+/* <CARD-BODY-PRICE STYLES> */
+.price{
+    margin: 4PX;
+    text-align: center;
+}
+h4{
+    font-weight: bolder;
+}
+
+/* <CARD-BODY-BUY-BUTTON STYLES> */
+.buy{
+   text-align: center;
+} 
+.btn{
+    margin-top: 3px;
+    margin-bottom: 12px;
+    font-size: 15px !important;
+    border-radius: 15px !important;
+    width: 160px;
+    background-color: rgb(212, 203, 79) !important;
+    border: none !important;
+}
+
+/* <SCREEN RESPONSIVE -STYLES> */
+
+@media screen and (max-width:690px) {
+    .main-card{
+        display: grid;
+         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:691px) and (max-width:900px) {
+    .main-card{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width:901px) and (max-width:1125px) {
+    .main-card{
+        display: grid;
+         grid-template-columns: repeat(4,1fr);
+            
+    }
+}
+@media screen and (min-width:1126px) and (max-width:1320px) {
+    .main-card{
+        display: grid;
+         grid-template-columns: repeat(5,1fr);
+          
+    }
+}
+
+@media screen and (min-width:1321px) {
+    .main-card{
+        display: grid;
+         grid-template-columns: repeat(6,1fr);
+          
+    }
+}
